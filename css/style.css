@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;    
+    padding: 25px 25px;
+    background-color: #FE642E;
+}
+
+.header h3 {
+    font-size: 14pt;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.content-center {
+    width: 90%;
+    text-align: center;
+}
+
+.content-center h3 {
+    margin: 20px 0;
+    align-content: center;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+.product .product-content {
+    display: flex;
+    align-items: center;
+}
+
+.product .product-img {
+    width: 80px;
+    height: 60px;
+}
+
+.product .description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.product .title {
+    font-size: 12pt;
+}
+
+.product .subtile {
+    font-size: 10pt;    
+}
+
+.product .price {
+    font-size: 14pt;
+    color: #FE642E;
+    font-weight: bold;
+}
+
+.product .button {
+    width: 130px;
+    height: 40px;
+    color: #FFF;
+    background-color: #FE642E;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Modal*/
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.show {
+    display: flex;
+}
+
+.modal {
+    background-color: #FFF;
+    width: 60%;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.modal-header {
+    display: flex; 
+    justify-content: space-between;
+    margin: 10px 10px;  
+}
+
+.modal-header h3 {
+    color: #FE642E;
+}
+
+.modal-header button {
+    width: 100px;
+    height: 40px;
+    color: #FFF;
+    background-color: #FE642E;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content {
+    display: flex;
+}
+
+.modal-content .modal-img {
+    width: 240px;
+    height: 220px;
+}
+.modal-content .modal-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; 
+}
+
+.modal-info .modal-title {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.modal-content .modal-subtile {
+    color: #6E6E6E;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.modal-content .modal-price {
+    color: #FE642E;
+    font-size: 22px;;
+    font-weight: bold;
+    padding: 5px 10px;
+}
