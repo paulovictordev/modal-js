@@ -10,9 +10,8 @@
     <header class="header">
         <h3 class="header__title">Minha Loja</h3>
     </header>
-
     <main class="main">
-        <section class="content">
+        <article class="content">
             <h3 class="content__title">LISTA DE PRODUTOS</h3>
             <ul class="product">
                 <li class="product__item">
@@ -43,8 +42,25 @@
                     <button class="button button--primary">Ver Detalhes</button>
                 </li>
             </ul>
-        </section>
+        </article>
     </main>
+    <!--Secao do modal-->
+    <section class="container">
+        <div class="modal">
+            <header class="modal-header">
+                <h3 class="modal-header__title">Detalhes do Produto</h3>
+                <button class="button button--primaty">Fechar</button>
+            </header>
+            <div class="modal__body">
+                <div class="modal__img"><img src="https://i.ibb.co/k2Ffyb4/picture-prod.png" alt="Imagem do Produto"/></div>
+                <div class="modal-info">
+                    <h4 class="modal-info__name">Nome do Produto</h4>
+                    <p class="modal-info__description">Descrição do Produto</p>
+                    <strong class="modal-info__price">R$ 500,00</strong>
+                </div>
+            </div>        
+        </div>
+    </section>
 <script src="js/script.js"></script>
 </body>
 </html>
